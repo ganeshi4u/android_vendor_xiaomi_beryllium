@@ -16,6 +16,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/xiaomi/beryllium/proprietary/etc/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
     vendor/xiaomi/beryllium/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/xiaomi/beryllium/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/beryllium/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
@@ -60,6 +61,53 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib/xlog_client.so:system/lib/xlog_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libnativeloader.so:system/lib/vndk-27/libnativeloader.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libheif.so:system/lib/vndk-27/libheif.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libsoundtrigger.so:system/lib/vndk-27/libsoundtrigger.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libvulkan.so:system/lib/vndk-27/libvulkan.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libandroid_runtime.so:system/lib/vndk-27/libandroid_runtime.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libGLESv3.so:system/lib/vndk-27/libGLESv3.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libsonivox.so:system/lib/vndk-27/libsonivox.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libandroid.so:system/lib/vndk-27/libandroid.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libgraphicsenv.so:system/lib/vndk-27/libgraphicsenv.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libpdfium.so:system/lib/vndk-27/libpdfium.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libsensor.so:system/lib/vndk-27/libsensor.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libmediadrm.so:system/lib/vndk-27/libmediadrm.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libmedia.so:system/lib/vndk-27/libmedia.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libprocessgroup.so:system/lib/vndk-27/libprocessgroup.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libkeystore_binder.so:system/lib/vndk-27/libkeystore_binder.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libnetd_client.so:system/lib/vndk-27/libnetd_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libicui18n.so:system/lib/vndk-27/libicui18n.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libharfbuzz_ng.so:system/lib/vndk-27/libharfbuzz_ng.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libmemunreachable.so:system/lib/vndk-27/libmemunreachable.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libstdc++.so:system/lib/vndk-27/libstdc++.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libinput.so:system/lib/vndk-27/libinput.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libmediautils.so:system/lib/vndk-27/libmediautils.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libicuuc.so:system/lib/vndk-27/libicuuc.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libaudioclient.so:system/lib/vndk-27/libaudioclient.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libvintf.so:system/lib/vndk-27/libvintf.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libdng_sdk.so:system/lib/vndk-27/libdng_sdk.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libdebuggerd_client.so:system/lib/vndk-27/libdebuggerd_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libnativebridge.so:system/lib/vndk-27/libnativebridge.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libappfuse.so:system/lib/vndk-27/libappfuse.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libeffectsconfig.so:system/lib/vndk-27/libeffectsconfig.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libcamera_client.so:system/lib/vndk-27/libcamera_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libpowermanager.so:system/lib/vndk-27/libpowermanager.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libjnigraphics.so:system/lib/vndk-27/libjnigraphics.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libGLESv2.so:system/lib/vndk-27/libGLESv2.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libEGL.so:system/lib/vndk-27/libEGL.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libmediametrics.so:system/lib/vndk-27/libmediametrics.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libETC1.so:system/lib/vndk-27/libETC1.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libskia.so:system/lib/vndk-27/libskia.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libhwui.so:system/lib/vndk-27/libhwui.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libminikin.so:system/lib/vndk-27/libminikin.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libimg_utils.so:system/lib/vndk-27/libimg_utils.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libnativehelper.so:system/lib/vndk-27/libnativehelper.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libandroidfw.so:system/lib/vndk-27/libandroidfw.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libaudiomanager.so:system/lib/vndk-27/libaudiomanager.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libpackagelistparser.so:system/lib/vndk-27/libpackagelistparser.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libselinux.so:system/lib/vndk-27/libselinux.so \
+    vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libRScpp.so:system/lib/vndk-27/libRScpp.so \
     vendor/xiaomi/beryllium/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -81,7 +129,60 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/xiaomi/beryllium/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
-    vendor/xiaomi/beryllium/proprietary/lib64/xlog_client.so:system/lib64/xlog_client.so
+    vendor/xiaomi/beryllium/proprietary/lib64/xlog_client.so:system/lib64/xlog_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/libncurses.so:system/lib64/libncurses.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/libjni_terminal.so:system/lib64/libjni_terminal.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/libjni_filtershow_filters.so:system/lib64/libjni_filtershow_filters.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/libjni_jpegstream.so:system/lib64/libjni_jpegstream.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/libjni_eglfence.so:system/lib64/libjni_eglfence.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libnativeloader.so:system/lib64/vndk-27/libnativeloader.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libheif.so:system/lib64/vndk-27/libheif.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libsoundtrigger.so:system/lib64/vndk-27/libsoundtrigger.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libvulkan.so:system/lib64/vndk-27/libvulkan.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libandroid_runtime.so:system/lib64/vndk-27/libandroid_runtime.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libGLESv3.so:system/lib64/vndk-27/libGLESv3.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libsonivox.so:system/lib64/vndk-27/libsonivox.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libandroid.so:system/lib64/vndk-27/libandroid.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libgraphicsenv.so:system/lib64/vndk-27/libgraphicsenv.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libpdfium.so:system/lib64/vndk-27/libpdfium.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libsensor.so:system/lib64/vndk-27/libsensor.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libmediadrm.so:system/lib64/vndk-27/libmediadrm.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libmedia.so:system/lib64/vndk-27/libmedia.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libprocessgroup.so:system/lib64/vndk-27/libprocessgroup.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/vendor.qti.hardware.iop@2.0.so:system/lib64/vndk-27/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libkeystore_binder.so:system/lib64/vndk-27/libkeystore_binder.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libnetd_client.so:system/lib64/vndk-27/libnetd_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libicui18n.so:system/lib64/vndk-27/libicui18n.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libharfbuzz_ng.so:system/lib64/vndk-27/libharfbuzz_ng.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libmemunreachable.so:system/lib64/vndk-27/libmemunreachable.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libstdc++.so:system/lib64/vndk-27/libstdc++.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libinput.so:system/lib64/vndk-27/libinput.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libmediautils.so:system/lib64/vndk-27/libmediautils.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libicuuc.so:system/lib64/vndk-27/libicuuc.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libaudioclient.so:system/lib64/vndk-27/libaudioclient.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libvintf.so:system/lib64/vndk-27/libvintf.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libdng_sdk.so:system/lib64/vndk-27/libdng_sdk.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libdebuggerd_client.so:system/lib64/vndk-27/libdebuggerd_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libnativebridge.so:system/lib64/vndk-27/libnativebridge.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libappfuse.so:system/lib64/vndk-27/libappfuse.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libeffectsconfig.so:system/lib64/vndk-27/libeffectsconfig.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libcamera_client.so:system/lib64/vndk-27/libcamera_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libpowermanager.so:system/lib64/vndk-27/libpowermanager.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libjnigraphics.so:system/lib64/vndk-27/libjnigraphics.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libGLESv2.so:system/lib64/vndk-27/libGLESv2.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libEGL.so:system/lib64/vndk-27/libEGL.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libmediametrics.so:system/lib64/vndk-27/libmediametrics.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libETC1.so:system/lib64/vndk-27/libETC1.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libskia.so:system/lib64/vndk-27/libskia.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libhwui.so:system/lib64/vndk-27/libhwui.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libminikin.so:system/lib64/vndk-27/libminikin.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libimg_utils.so:system/lib64/vndk-27/libimg_utils.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libnativehelper.so:system/lib64/vndk-27/libnativehelper.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libandroidfw.so:system/lib64/vndk-27/libandroidfw.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libaudiomanager.so:system/lib64/vndk-27/libaudiomanager.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libpackagelistparser.so:system/lib64/vndk-27/libpackagelistparser.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libselinux.so:system/lib64/vndk-27/libselinux.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libRScpp.so:system/lib64/vndk-27/libRScpp.so
 
 PRODUCT_PACKAGES += \
     libantradio \
