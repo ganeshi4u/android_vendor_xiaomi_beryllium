@@ -61,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/beryllium/proprietary/lib/xlog_client.so:system/lib/xlog_client.so \
+    vendor/xiaomi/beryllium/proprietary/lib/hw/lights.beryllium.so:system/lib/hw/lights.beryllium.so \
     vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libnativeloader.so:system/lib/vndk-27/libnativeloader.so \
     vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libheif.so:system/lib/vndk-27/libheif.so \
     vendor/xiaomi/beryllium/proprietary/lib/vndk-27/libsoundtrigger.so:system/lib/vndk-27/libsoundtrigger.so \
@@ -135,6 +136,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/lib64/libjni_filtershow_filters.so:system/lib64/libjni_filtershow_filters.so \
     vendor/xiaomi/beryllium/proprietary/lib64/libjni_jpegstream.so:system/lib64/libjni_jpegstream.so \
     vendor/xiaomi/beryllium/proprietary/lib64/libjni_eglfence.so:system/lib64/libjni_eglfence.so \
+    vendor/xiaomi/beryllium/proprietary/lib64/hw/lights.beryllium.so:system/lib64/hw/lights.beryllium.so \
     vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libnativeloader.so:system/lib64/vndk-27/libnativeloader.so \
     vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libheif.so:system/lib64/vndk-27/libheif.so \
     vendor/xiaomi/beryllium/proprietary/lib64/vndk-27/libsoundtrigger.so:system/lib64/vndk-27/libsoundtrigger.so \
