@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/beryllium/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/beryllium/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/xiaomi/beryllium/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/xiaomi/beryllium/proprietary/etc/permissions/hostapd.xml:system/etc/permissions/hostapd.xml \
     vendor/xiaomi/beryllium/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/beryllium/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/beryllium/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -190,6 +191,7 @@ PRODUCT_PACKAGES += \
     libantradio \
     QtiTelephonyService \
     ims \
+    hostapd \
     uceShimService \
     CNEService \
     dpmserviceapp \
